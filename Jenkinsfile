@@ -16,7 +16,7 @@ pipeline {
 		id
 		source ~/.bashrc
     cd ${WORKSPACE}/hello_world
-    mvn install
+    /opt/maven/bin/mvn install
     '''
 		}
 	}
@@ -26,7 +26,7 @@ pipeline {
 		    id
 		    source ~/.bashrc
         cd ${WORKSPACE}/hello_world
-        mvn deploy
+        /opt/maven/bin/mvn deploy
         '''
 	   }
 	  }
