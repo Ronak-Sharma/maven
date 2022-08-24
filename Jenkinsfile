@@ -14,7 +14,6 @@ pipeline {
 	    steps {
 		sh '''
 		id
-		source ~/.bashrc
     cd ${WORKSPACE}/hello_world
     /opt/maven/bin/mvn install
     '''
@@ -24,7 +23,6 @@ pipeline {
 	    steps {
 		    sh '''
 		    id
-		    source ~/.bashrc
         cd ${WORKSPACE}/hello_world
         /opt/maven/bin/mvn deploy
         '''
