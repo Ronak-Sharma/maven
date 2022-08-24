@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>hello_world_ronak</groupId>
   <artifactId>hello_world</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <dependencies>
         <!-- https://mvnrepository.com/artifact/io.airlift/testing -->
 
@@ -18,12 +18,12 @@
           <repository>                          <!-- this is release version -->
                   <id>weekend</id>
                   <name>weekend-release</name>
-                  <url>http://13.127.50.217:8081/repository/weekend-release/</url>
+                  <url>http://65.2.31.150:8081/repository/weekend-release/</url>
           </repository>
           <snapshotRepository>                  <!-- this is snapshot version -->
                   <id>weekend</id>
                   <name>Internal Releases</name>
-                  <url>http://13.127.50.217:8081/repository/weekend-snapshot/</url>
+                  <url>http://65.2.31.150:8081/repository/weekend-snapshot/</url>
           </snapshotRepository>
   </distributionManagement>
 
