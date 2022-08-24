@@ -13,6 +13,7 @@ pipeline {
 	stage('mvn build'){
 	    steps {
 		sh '''
+		source ~/.bashrc
     cd ${WORKSPACE}/hello_world
     mvn install
     '''
@@ -21,6 +22,7 @@ pipeline {
 	stage('mvn deploy'){
 	    steps {
 		    sh '''
+		    source ~/.bashrc
         cd ${WORKSPACE}/hello_world
         mvn deploy
         '''
